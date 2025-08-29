@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* closs scroll x */
+  overflow-x: hidden;
+}
+.toolbar {
+  box-shadow: 0 1px 2px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.search-container {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  margin: 30px 20px;
+  margin-inline-start: 2%;
+}
+.menu {
+  font-size: 30px;
+}
+.search-container input {
+  font-size: 30px;
+  flex: 1;
+  /* size box */
+  padding: 20px;
+  border-radius: 0px;
+  /* remove space two box */
+  margin-left: -12px;
+}
+.auth-buttons a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #016b9d;
+  font-weight: bold;
+  margin: 5px;
+}
+#choose {
+  color: rgb(146, 135, 135);
+}
+#paypalBtn {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #ff8900;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 5px;
+}
+/* block 2 */
+.picutre image {
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+}
+.character {
+  font-size: 25px;
+  margin-top: 120px;
+  margin-left: 7%;
+}
+.list {
+  font-size: 25px;
+  margin-top: 100px;
+  box-shadow: 0 2px 5px 0;
+  padding: 20px;
+  margin-inline-start: 7%;
+  margin-inline-end: 7%;
+}
+.list image {
+  background-color: rgb(45, 183, 183);
+}
+
+.line2 {
+  margin-top: 100px;
+}
