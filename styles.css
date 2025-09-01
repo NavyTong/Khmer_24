@@ -56,11 +56,11 @@ body {
   margin: 5px;
 }
 
-.picture {
+.logo_pic {
   display: flex;
 }
 /* block 2 */
-.picture img {
+.logo_pic img {
   width: 80%;
   height: auto;
   margin-top: 20px;
@@ -73,28 +73,38 @@ body {
   margin-top: 120px;
   margin-left: 7%;
 }
-.list {
+/*  outside fullscreen */
+.category {
   font-size: 25px;
   margin-top: 50px;
-  box-shadow: 0 2px 5px 0;
-  padding: 100px;
+  padding: 150px;
   margin-inline-start: 7%;
   margin-inline-end: 7%;
+  /* For box  */
+  border-style: ridge;
+  row-gap: 30px;
 }
-.list img {
+/* inside screen */
+.category1,
+.category2 {
+  /*  make line row */
+  display: flex;
+  flex-direction: wrap;
+  margin-top: 100px;
+}
+
+.categories img {
   background-color: rgb(216, 222, 222);
   /* shape bacground */
   border-radius: 100px;
   width: 100px;
   height: 100px;
 }
-.list td {
-  display: block;
-}
-.line2 {
-  margin-top: 120px;
-}
 /* block 3 */
+.bestseller {
+  margin-top: 7%;
+  margin-left: 5%;
+}
 .part3 {
   display: flex;
 }
@@ -149,6 +159,7 @@ h2 {
   font-size: 25px;
   text-align: center;
   color: #ffffff;
+  letter-spacing: -0.02em;
 }
 .card2 {
   background-color: white;
@@ -173,8 +184,8 @@ h2 {
   padding: 20px 40px;
 }
 .selectall button {
-  margin-top: 5%;
-  margin-bottom: 20%;
+  margin-top: 3%;
+  margin-bottom: 5%;
   margin-left: 5%;
   font-size: 40px;
   color: white;
@@ -182,4 +193,21 @@ h2 {
   width: 80%;
   height: 90px;
   background-color: #4c7ade;
+}
+.location {
+  margin-left: 10%;
+  margin-right: 10%;
+  border-style: ridge;
+  max-width: 100%;
+}
+.location ul {
+  list-style: none;
+  /* cut line */
+  columns: 5;
+  column-gap: 40px;
+}
+.location ul a {
+  text-decoration: none;
+  color: #05668d;
+  font-size: 30px;
 }
