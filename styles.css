@@ -106,10 +106,10 @@ body {
 .top_ads_card {
   background-color: whitesmoke;
   border-radius: 5px;
-  margin: 10px 10px;
+  margin: 5px 5px;
 }
 .top_ads_card img {
-  width: auto;
+  width: 200px;
   height: 200px;
 }
 .size,
@@ -126,8 +126,10 @@ body {
 .latest_ads {
   margin-left: 15%;
   margin-right: 10%;
-  background-color: #05668d;
-  columns: 4;
+  background-color: #e0e8eb;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto auto auto;
 }
 .latest_ads_card {
   background-color: whitesmoke;
@@ -169,7 +171,7 @@ body {
   background-color: #4c7ade;
 }
 .location {
-  margin-left: 10%;
+  margin-left: 15%;
   margin-right: 10%;
   border-style: ridge;
   max-width: 100%;
@@ -183,24 +185,35 @@ body {
 .location ul a {
   text-decoration: none;
   color: #05668d;
-  font-size: 20px;
+  font-size: 18px;
 }
 /* cambodia */
 .pic_cambodia img {
   width: 100%;
+  margin-bottom: 0%;
 }
 .detail {
   display: flex;
   flex-wrap: wrap;
   background-color: #05668d;
   color: white;
+  margin-top: 0%;
 }
 .follow_khmer24 {
   list-style-type: none;
   margin-left: 10%;
 }
+.qr,
+img {
+  width: 50%;
+}
+.we_accept {
+  list-style-type: none;
+  display: flex;
+  margin-left: 650px;
+}
 .we_accept img {
-  width: 70px;
+  width: 80%;
 }
 /* testing  */
 /* .category_list {
