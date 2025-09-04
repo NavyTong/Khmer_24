@@ -1,0 +1,20 @@
+.grid_section {
+  /* padding: 0 200px; */
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+  background-color: lightgrey;
+  width: 1060px;
+  grid-template-columns:250px 250px 250px 250px;
+  padding: 20px;
+}
+
+.container .item {
+  height: 400px;
+  background-color: blue;
+}
