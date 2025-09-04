@@ -111,6 +111,7 @@ body {
 .top_ads_card img {
   width: 200px;
   height: 200px;
+  object-fit: cover;
 }
 .size,
 .Date,
@@ -122,25 +123,34 @@ body {
 .price1 {
   color: red;
 }
+
+.latest_ads_container {
+  display: flex;
+  justify-content: center;
+}
+
 /* part4 */
 .latest_ads {
-  margin-left: 15%;
-  margin-right: 10%;
   background-color: #e0e8eb;
   display: grid;
-  gap: 10px;
+  column-gap: 10px;
+  row-gap: 20px;
   grid-template-columns: auto auto auto auto;
+  width: 1275px;
 }
 .latest_ads_card {
   background-color: whitesmoke;
   border-radius: 5px;
-  width: 220px;
-  margin: 10px 10px;
-  padding: 5px 5px;
+  /* width: 300px; */
+  /* width: 100%; */
+  /* margin: 10px 10px; */
+  /* padding: 5px 5px; */
+  overflow: hidden;
 }
 .latest_ads_card img {
-  width: auto;
-  height: 147px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 .Sell1,
 .Date1,
@@ -190,31 +200,48 @@ body {
 /* cambodia */
 .pic_cambodia img {
   width: 100%;
-  margin-bottom: 0%;
+  margin-bottom: -10px;
 }
 .detail {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   background-color: #05668d;
-  color: white;
-  margin-top: 0%;
+  /* color: white; */
+  /* margin-top: 0%; */
 }
+
 .follow_khmer24 {
   list-style-type: none;
   margin-left: 10%;
 }
-.qr,
-img {
-  width: 50%;
+.qr img {
+  width: 150px;
 }
+.store img {
+  width: 120px;
+}
+
 .we_accept {
-  list-style-type: none;
+  width: 100%;
+  /* list-style-type: none; */
   display: flex;
-  margin-left: 650px;
+  justify-content: flex-end;
+  /* margin-left: 650px; */
 }
+
 .we_accept img {
   width: 80%;
 }
+
+.store_container {
+  display: flex;
+}
+
+.store_app {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
 /* testing  */
 /* .category_list {
   display: flex;
@@ -230,3 +257,24 @@ img {
   border-radius: 100%;
   width: 60px;
 } */
+
+.grid_section {
+  /* padding: 0 200px; */
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 20px;
+  background-color: lightgrey;
+  width: 1060px;
+  grid-template-columns:250px 250px 250px 250px;
+  padding: 20px;
+}
+
+.container .item {
+  height: 400px;
+  background-color: blue;
+}
