@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Mastery - CSS Layout Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="lesson-header">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">← Back to Lessons</a>
+            </nav>
+            <h1>📦 Flexbox Mastery</h1>
+            <p>Master the art of flexible layouts with CSS Flexbox</p>
+        </div>
+    </header>
+
+    <main class="lesson-content">
+        <div class="container">
+            <!-- Lesson 1: Basic Flexbox -->
+            <section class="lesson-section">
+                <h2>1. Basic Flexbox Properties</h2>
+                <p>Learn the fundamental properties that make flexbox powerful for layout.</p>
+                
+                <div class="example-container">
+                    <h3>display: flex</h3>
+                    <div class="code-example">
+                        <pre><code>.container {
+    display: flex;
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="flex-demo basic-flex">
+                            <div class="flex-item">Item 1</div>
+                            <div class="flex-item">Item 2</div>
+                            <div class="flex-item">Item 3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-container">
+                    <h3>flex-direction: row | column | row-reverse | column-reverse</h3>
+                    <div class="code-example">
+                        <pre><code>.container {
+    display: flex;
+    flex-direction: column; /* or row, row-reverse, column-reverse */
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="flex-demo direction-demo">
+                            <div class="flex-item">Item 1</div>
+                            <div class="flex-item">Item 2</div>
+                            <div class="flex-item">Item 3</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lesson 2: Justify Content -->
+            <section class="lesson-section">
+                <h2>2. Justify Content (Main Axis Alignment)</h2>
+                <p>Control how items are distributed along the main axis.</p>
+                
+                <div class="example-container">
+                    <h3>justify-content: space-between</h3>
+                    <div class="code-example">
+                        <pre><code>.container {
+    display: flex;
+    justify-content: space-between;
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="flex-demo justify-between">
+                            <div class="flex-item">Start</div>
+                            <div class="flex-item">Middle</div>
+                            <div class="flex-item">End</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-container">
+                    <h3>justify-content: space-around</h3>
+                    <div class="code-example">
+                        <pre><code>.container {
+    display: flex;
+    justify-content: space-around;
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="flex-demo justify-around">
+                            <div class="flex-item">Item 1</div>
+                            <div class="flex-item">Item 2</div>
+                            <div class="flex-item">Item 3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-container">
+                    <h3>justify-content: center</h3>
+                    <div class="code-example">
+                        <pre><code>.container {
+    display: flex;
+    justify-content: center;
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="flex-demo justify-center">
+                            <div class="flex-item">Centered</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lesson 3: Align Items -->
+            <section class="lesson-section">
+                <h2>3. Align Items (Cross Axis Alignment)</h2>
+                <p>Control how items are aligned along the cross axis.</p>
+                
+                <div class="example-container">
+                    <h3>align-items: center</h3>
+                    <div class="code-example">
+                        <pre><code>.container {
+    display: flex;
+    align-items: center;
+    height: 200px;
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="flex-demo align-center">
+                            <div class="flex-item">Item 1</div>
+                            <div class="flex-item tall">Tall Item</div>
+                            <div class="flex-item">Item 3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-container">
+                    <h3>align-items: stretch</h3>
+                    <div class="code-example">
+                        <pre><code>.container {
+    display: flex;
+    align-items: stretch;
+    height: 200px;
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="flex-demo align-stretch">
+                            <div class="flex-item">Item 1</div>
+                            <div class="flex-item">Item 2</div>
+                            <div class="flex-item">Item 3</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lesson 4: Flex Properties -->
+            <section class="lesson-section">
+                <h2>4. Flex Properties (Flex Items)</h2>
+                <p>Control how individual flex items grow, shrink, and behave.</p>
+                
+                <div class="example-container">
+                    <h3>flex-grow: 1 (Equal Growth)</h3>
+                    <div class="code-example">
+                        <pre><code>.flex-item {
+    flex-grow: 1;
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="flex-demo flex-grow-demo">
+                            <div class="flex-item grow-1">Grow 1</div>
+                            <div class="flex-item grow-1">Grow 1</div>
+                            <div class="flex-item grow-1">Grow 1</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-container">
+                    <h3>Different flex-grow values</h3>
+                    <div class="code-example">
+                        <pre><code>.item-1 { flex-grow: 1; }
+.item-2 { flex-grow: 2; }
+.item-3 { flex-grow: 1; }</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="flex-demo flex-grow-demo">
+                            <div class="flex-item grow-1">Grow 1</div>
+                            <div class="flex-item grow-2">Grow 2</div>
+                            <div class="flex-item grow-1">Grow 1</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lesson 5: Real-world Examples -->
+            <section class="lesson-section">
+                <h2>5. Real-world Examples</h2>
+                <p>See flexbox in action with practical examples.</p>
+                
+                <div class="example-container">
+                    <h3>Navigation Bar</h3>
+                    <div class="code-example">
+                        <pre><code>.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <nav class="navbar-demo">
+                            <div class="logo">Logo</div>
+                            <ul class="nav-links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="example-container">
+                    <h3>Card Layout</h3>
+                    <div class="code-example">
+                        <pre><code>.card-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 300px;
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="card-container">
+                            <div class="card">
+                                <h4>Card 1</h4>
+                                <p>This is a flexbox card with equal width.</p>
+                            </div>
+                            <div class="card">
+                                <h4>Card 2</h4>
+                                <p>Cards automatically adjust to available space.</p>
+                            </div>
+                            <div class="card">
+                                <h4>Card 3</h4>
+                                <p>Perfect for responsive layouts!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-container">
+                    <h3>Centering Content</h3>
+                    <div class="code-example">
+                        <pre><code>.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="center-container">
+                            <div class="centered-content">
+                                <h4>Perfectly Centered!</h4>
+                                <p>Both horizontally and vertically</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Practice Section -->
+            <section class="lesson-section practice-section">
+                <h2>🎯 Practice Time!</h2>
+                <p>Try these challenges to test your flexbox skills:</p>
+                <div class="challenges">
+                    <div class="challenge">
+                        <h4>Challenge 1: Create a Footer</h4>
+                        <p>Build a footer with copyright on the left, social links on the right, and centered navigation in the middle.</p>
+                    </div>
+                    <div class="challenge">
+                        <h4>Challenge 2: Image Gallery</h4>
+                        <p>Create a responsive image gallery where images are evenly distributed and wrap to new rows on smaller screens.</p>
+                    </div>
+                    <div class="challenge">
+                        <h4>Challenge 3: Pricing Cards</h4>
+                        <p>Design pricing cards that are equal width, with the middle card slightly taller to highlight it as "featured".</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="lesson-footer">
+        <div class="container">
+            <div class="footer-nav">
+                <a href="../index.html" class="nav-btn">← Back to Lessons</a>
+                <a href="../grid/index.html" class="nav-btn">Next: CSS Grid →</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

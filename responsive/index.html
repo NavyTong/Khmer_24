@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Mastery - CSS Layout Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="lesson-header">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../index.html">← Back to Lessons</a>
+            </nav>
+            <h1>📱 Responsive Design Mastery</h1>
+            <p>Build websites that work perfectly on all devices</p>
+        </div>
+    </header>
+
+    <main class="lesson-content">
+        <div class="container">
+            <!-- Lesson 1: Viewport Meta Tag -->
+            <section class="lesson-section">
+                <h2>1. Viewport Meta Tag</h2>
+                <p>The foundation of responsive design - telling the browser how to control the page's dimensions and scaling.</p>
+                
+                <div class="example-container">
+                    <h3>Essential Viewport Meta Tag</h3>
+                    <div class="code-example">
+                        <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="viewport-demo">
+                            <p>This page uses the viewport meta tag to ensure proper scaling on mobile devices.</p>
+                            <div class="device-mockup">
+                                <div class="device-screen">
+                                    <div class="content-box">Content scales properly</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lesson 2: Media Queries -->
+            <section class="lesson-section">
+                <h2>2. Media Queries</h2>
+                <p>Apply different styles based on device characteristics like screen size, orientation, and resolution.</p>
+                
+                <div class="example-container">
+                    <h3>Basic Media Query Syntax</h3>
+                    <div class="code-example">
+                        <pre><code>/* Mobile First Approach */
+.container {
+    padding: 1rem;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    .container {
+        padding: 2rem;
+    }
+}
+
+/* Desktop and up */
+@media (min-width: 1024px) {
+    .container {
+        padding: 3rem;
+    }
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="responsive-demo">
+                            <div class="responsive-box">
+                                <h4>Responsive Box</h4>
+                                <p>This box changes size and color based on screen width!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-container">
+                    <h3>Common Breakpoints</h3>
+                    <div class="code-example">
+                        <pre><code>/* Mobile: 320px - 767px */
+@media (max-width: 767px) { }
+
+/* Tablet: 768px - 1023px */
+@media (min-width: 768px) and (max-width: 1023px) { }
+
+/* Desktop: 1024px and up */
+@media (min-width: 1024px) { }
+
+/* Large Desktop: 1200px and up */
+@media (min-width: 1200px) { }</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="breakpoint-demo">
+                            <div class="breakpoint-info">
+                                <p>Current screen size: <span id="screen-size">Loading...</span></p>
+                                <p>Active breakpoint: <span id="breakpoint">Loading...</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lesson 3: Fluid Typography -->
+            <section class="lesson-section">
+                <h2>3. Fluid Typography</h2>
+                <p>Create text that scales smoothly across all device sizes using relative units and CSS functions.</p>
+                
+                <div class="example-container">
+                    <h3>Using clamp() for Fluid Typography</h3>
+                    <div class="code-example">
+                        <pre><code>h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    /* Minimum: 1.5rem, Preferred: 4vw, Maximum: 3rem */
+}
+
+p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    line-height: 1.6;
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="typography-demo">
+                            <h1 class="fluid-heading">Fluid Typography</h1>
+                            <p class="fluid-text">This text scales smoothly between different screen sizes. Resize your browser window to see the effect!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-container">
+                    <h3>Responsive Line Heights</h3>
+                    <div class="code-example">
+                        <pre><code>p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    line-height: clamp(1.4, 1.2 + 0.5vw, 1.8);
+    /* Responsive line height that adapts to font size */
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="typography-demo">
+                            <p class="responsive-line-height">This paragraph demonstrates responsive line height. The spacing between lines adjusts automatically as the text size changes, ensuring optimal readability on all devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lesson 4: Flexible Images -->
+            <section class="lesson-section">
+                <h2>4. Flexible Images</h2>
+                <p>Make images responsive and ensure they look great on all devices.</p>
+                
+                <div class="example-container">
+                    <h3>Basic Responsive Images</h3>
+                    <div class="code-example">
+                        <pre><code>img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* For different aspect ratios */
+.responsive-image {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="image-demo">
+                            <div class="responsive-image">
+                                <div class="image-placeholder">📷 Responsive Image</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-container">
+                    <h3>Picture Element for Art Direction</h3>
+                    <div class="code-example">
+                        <pre><code>&lt;picture&gt;
+    &lt;source media="(min-width: 768px)" srcset="large-image.jpg"&gt;
+    &lt;source media="(min-width: 480px)" srcset="medium-image.jpg"&gt;
+    &lt;img src="small-image.jpg" alt="Responsive image"&gt;
+&lt;/picture&gt;</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="picture-demo">
+                            <div class="image-mockup">
+                                <div class="image-size-indicator">Different images for different screen sizes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lesson 5: Mobile-First Design -->
+            <section class="lesson-section">
+                <h2>5. Mobile-First Design</h2>
+                <p>Start with mobile design and progressively enhance for larger screens.</p>
+                
+                <div class="example-container">
+                    <h3>Mobile-First Approach</h3>
+                    <div class="code-example">
+                        <pre><code>/* Mobile styles (base) */
+.navigation {
+    display: none; /* Hidden by default */
+}
+
+.mobile-menu {
+    display: block;
+}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    .navigation {
+        display: flex;
+    }
+    
+    .mobile-menu {
+        display: none;
+    }
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="mobile-first-demo">
+                            <div class="mobile-nav">
+                                <div class="mobile-menu">☰ Menu</div>
+                                <div class="desktop-nav">
+                                    <a href="#">Home</a>
+                                    <a href="#">About</a>
+                                    <a href="#">Services</a>
+                                    <a href="#">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lesson 6: Real-world Examples -->
+            <section class="lesson-section">
+                <h2>6. Real-world Examples</h2>
+                <p>See responsive design principles in action with complete layouts.</p>
+                
+                <div class="example-container">
+                    <h3>Responsive Card Layout</h3>
+                    <div class="code-example">
+                        <pre><code>.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="card-grid">
+                            <div class="responsive-card">
+                                <h4>Card 1</h4>
+                                <p>This card adapts to different screen sizes</p>
+                            </div>
+                            <div class="responsive-card">
+                                <h4>Card 2</h4>
+                                <p>Grid layout changes from 1 to 2 to 3 columns</p>
+                            </div>
+                            <div class="responsive-card">
+                                <h4>Card 3</h4>
+                                <p>Perfect for responsive design patterns</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-container">
+                    <h3>Responsive Navigation</h3>
+                    <div class="code-example">
+                        <pre><code>.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-links {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .mobile-menu {
+        display: none;
+    }
+}</code></pre>
+                    </div>
+                    <div class="demo-container">
+                        <div class="responsive-navbar">
+                            <div class="logo">Logo</div>
+                            <div class="mobile-menu">☰</div>
+                            <div class="nav-links">
+                                <a href="#">Home</a>
+                                <a href="#">About</a>
+                                <a href="#">Services</a>
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Practice Section -->
+            <section class="lesson-section practice-section">
+                <h2>🎯 Practice Time!</h2>
+                <p>Test your responsive design skills with these challenges:</p>
+                <div class="challenges">
+                    <div class="challenge">
+                        <h4>Challenge 1: Responsive Blog Layout</h4>
+                        <p>Create a blog layout that shows 1 column on mobile, 2 on tablet, and 3 on desktop. Include responsive typography and images.</p>
+                    </div>
+                    <div class="challenge">
+                        <h4>Challenge 2: Mobile-First E-commerce</h4>
+                        <p>Build a product grid that starts with a single column on mobile and expands to show more products on larger screens.</p>
+                    </div>
+                    <div class="challenge">
+                        <h4>Challenge 3: Responsive Dashboard</h4>
+                        <p>Design a dashboard that collapses to a mobile-friendly layout on small screens while maintaining functionality.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="lesson-footer">
+        <div class="container">
+            <div class="footer-nav">
+                <a href="../grid/index.html" class="nav-btn">← Previous: CSS Grid</a>
+                <a href="../index.html" class="nav-btn">Back to Lessons</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update screen size and breakpoint info
+        function updateScreenInfo() {
+            const width = window.innerWidth;
+            const screenSizeEl = document.getElementById('screen-size');
+            const breakpointEl = document.getElementById('breakpoint');
+            
+            screenSizeEl.textContent = `${width}px`;
+            
+            if (width < 768) {
+                breakpointEl.textContent = 'Mobile (< 768px)';
+            } else if (width < 1024) {
+                breakpointEl.textContent = 'Tablet (768px - 1023px)';
+            } else {
+                breakpointEl.textContent = 'Desktop (≥ 1024px)';
+            }
+        }
+        
+        // Update on load and resize
+        updateScreenInfo();
+        window.addEventListener('resize', updateScreenInfo);
+    </script>
+</body>
+</html>

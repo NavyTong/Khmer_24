@@ -1,0 +1,566 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.lesson-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.breadcrumb {
+    margin-bottom: 1rem;
+}
+
+.breadcrumb a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #764ba2;
+}
+
+.lesson-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.lesson-header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+/* Main Content */
+.lesson-content {
+    padding-bottom: 2rem;
+}
+
+.lesson-section {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 0.5rem;
+}
+
+.lesson-section p {
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Example Containers */
+.example-container {
+    margin-bottom: 3rem;
+    border: 1px solid #ecf0f1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.example-container h3 {
+    background: #f8f9fa;
+    padding: 1rem;
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.code-example {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.code-example pre {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.demo-container {
+    padding: 2rem;
+    background: #f8f9fa;
+    border-top: 1px solid #ecf0f1;
+}
+
+/* Viewport Demo */
+.viewport-demo {
+    text-align: center;
+}
+
+.device-mockup {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    background: #2c3e50;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.device-screen {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* Responsive Demo */
+.responsive-demo {
+    text-align: center;
+}
+
+.responsive-box {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.responsive-box h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Breakpoint Demo */
+.breakpoint-demo {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    border-radius: 10px;
+}
+
+.breakpoint-info p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.breakpoint-info span {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Typography Demo */
+.typography-demo {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.fluid-heading {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.fluid-text {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.responsive-line-height {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    line-height: clamp(1.4, 1.2 + 0.5vw, 1.8);
+    color: #7f8c8d;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Image Demo */
+.image-demo {
+    text-align: center;
+}
+
+.responsive-image {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    border-radius: 10px;
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.image-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.picture-demo {
+    text-align: center;
+}
+
+.image-mockup {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.image-size-indicator {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Mobile-First Demo */
+.mobile-first-demo {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.mobile-nav {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.desktop-nav {
+    display: none;
+    gap: 2rem;
+}
+
+.desktop-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.desktop-nav a:hover {
+    color: #667eea;
+}
+
+/* Real-world Examples */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.responsive-card {
+    background: white;
+    border: 1px solid #ecf0f1;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.responsive-card:hover {
+    transform: translateY(-5px);
+}
+
+.responsive-card h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.responsive-card p {
+    color: #7f8c8d;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.responsive-navbar {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.mobile-menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #667eea;
+}
+
+/* Practice Section */
+.practice-section {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.practice-section h2 {
+    color: white;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.practice-section p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.challenges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.challenge {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.challenge h4 {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.challenge p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+.lesson-footer {
+    background: rgba(44, 62, 80, 0.95);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* Responsive Design - Mobile First Approach */
+@media (min-width: 768px) {
+    .lesson-header h1 {
+        font-size: 3rem;
+    }
+    
+    .lesson-section {
+        padding: 2.5rem;
+    }
+    
+    .responsive-box {
+        padding: 3rem;
+    }
+    
+    .responsive-box h4 {
+        font-size: 2rem;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .desktop-nav {
+        display: flex;
+    }
+    
+    .mobile-menu {
+        display: none;
+    }
+    
+    .nav-links {
+        display: flex;
+    }
+    
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lesson-section {
+        padding: 3rem;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .device-mockup {
+        width: 250px;
+        height: 400px;
+    }
+    
+    .responsive-box {
+        padding: 4rem;
+    }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 767px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .lesson-section {
+        padding: 1.5rem;
+    }
+    
+    .demo-container {
+        padding: 1rem;
+    }
+    
+    .code-example {
+        padding: 0.5rem;
+    }
+    
+    .code-example pre {
+        font-size: 0.8rem;
+    }
+    
+    .device-mockup {
+        width: 150px;
+        height: 250px;
+    }
+    
+    .challenges {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-nav {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .lesson-header h1 {
+        font-size: 2rem;
+    }
+    
+    .lesson-section {
+        padding: 1rem;
+    }
+    
+    .demo-container {
+        padding: 0.5rem;
+    }
+    
+    .responsive-box {
+        padding: 1.5rem;
+    }
+    
+    .breakpoint-demo {
+        padding: 1rem;
+    }
+    
+    .typography-demo {
+        padding: 1rem;
+    }
+}
