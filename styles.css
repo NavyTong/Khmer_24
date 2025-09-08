@@ -5,21 +5,25 @@ body {
   overflow-x: none;
   background-color: whitesmoke;
 }
+
 .logo {
   min-width: none;
 }
+
 .toolbar {
   border: 50px solid white;
   display: flex;
   flex: 2;
   padding: 20px 10px 20px 10px;
 }
+
 .search-container {
   display: flex;
   gap: 10px;
   flex: 1;
   padding-inline-start: 2%;
 }
+
 .menu {
   font-size: 15px;
 }
@@ -72,10 +76,9 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   display: grid;
-  /* gap: 5px; */
+  gap: 5px;
   grid-template-columns: auto auto auto auto auto auto;
   background-color: white;
-  justify-content: space-evenly;
 }
 .category_item {
   padding: 10px;
