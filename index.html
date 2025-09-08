@@ -7,14 +7,15 @@
     <title>Khmer24</title>
   </head>
   <body>
+    <div class="test_box"></div>
     <!-- Header of web -->
     <header class="toolbar">
         <div class="logo">
           <!-- flag Cambodia -->
-          <img src="https://www.khmer24.com/icon/khmer24.png" alt="webname" />
-          <img src="https://www.khmer24.com/icon/km-40x40.png" alt="" />
+          <img class="logo_img" src="https://www.khmer24.com/icon/khmer24.png" alt="webname" />
+          <img class="flag_img" src="https://www.khmer24.com/icon/km-40x40.png" alt="" />
         </div>
-        <div class="search-container">
+        <div class="search-container search-container-desktop">
           <select class="menu" id="search">
             <option value="#">All Category</option>
             <option value="#">Cars and Vehicles</option>
@@ -32,6 +33,16 @@
           <button id="paypalBtn">Sell</button>
         </div>
     </header>
+    <div class="search-container search-container-mobile">
+          <select class="menu" id="search">
+            <option value="#">All Category</option>
+            <option value="#">Cars and Vehicles</option>
+            <option value="#">Phones & Tablets</option>
+            <option value="#">Computers & Accessories</option>
+            <option value="#">Electronics & Appliances</option>
+          </select>
+          <input type="text" placeholder="What are you looking for..." />
+        </div>
     <!-- Logo Picture vivo-->
     <div class="logo_pic">
       <img
