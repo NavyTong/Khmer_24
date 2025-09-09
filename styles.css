@@ -2,17 +2,17 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   /* closs scroll x */
-  overflow-x: none;
+  overflow-x: hidden;
   background-color: whitesmoke;
 }
 .logo {
   min-width: none;
 }
 .toolbar {
-  border: 50px solid white;
+  border: 0px;
   display: flex;
   flex: 2;
-  padding: 20px 10px 20px 10px;
+  padding: 90px 80px 20px 80px;
 }
 .search-container {
   display: flex;
@@ -26,9 +26,6 @@ body {
 .search-container input {
   font-size: 15px;
   flex: 1;
-  /* size box */
-  padding: 10px;
-  border-radius: 0px;
   /* remove space two box */
   margin-left: -12px;
 }
@@ -57,7 +54,7 @@ body {
 }
 /* block 2 */
 .logo_pic img {
-  width: 80%;
+  width: 1100px;
   height: auto;
   margin-top: 20px;
   margin-left: auto;
@@ -124,15 +121,15 @@ body {
 }
 /* part4 */
 .latest_ads {
-  margin-left: 10%;
-  margin-right: 10%;
   background-color: #f2fcff;
   display: grid;
   /* between column and row */
-  column-gap: 10px;
-  row-gap: 10px;
+  column-gap: 5px;
+  row-gap: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
   grid-template-columns: auto auto auto auto;
-  width: 1275px;
+  width: 1150px;
 }
 .latest_ads_card {
   background-color: rgb(225, 218, 218);
@@ -143,7 +140,7 @@ body {
   /* width: auto;
   height: 147px; */
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
 }
 .Sell1,
@@ -165,7 +162,7 @@ body {
 }
 .selectall button {
   /* top right buttom left */
-  margin: 3% 15% 3% 15%;
+  margin: 3% 11% 3% 12%;
   font-size: 20px;
   color: white;
   border-radius: 20px;
@@ -175,7 +172,7 @@ body {
   background-color: #4c7ade;
 }
 .location {
-  margin-left: 15%;
+  margin-left: 10%;
   margin-right: 10%;
   border-style: ridge;
   max-width: 100%;
@@ -194,7 +191,7 @@ body {
 /* cambodia */
 .pic_cambodia img {
   width: 100%;
-  margin-bottom: 0%;
+  margin-bottom: -10px;
 }
 .detail {
   display: flex;
@@ -231,4 +228,47 @@ body {
   width: 70px;
   gap: 12px;
   margin-top: 20px;
+}
+.search-container-mobile {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .logo .logo_img {
+    width: 100px;
+  }
+  .logo .flag_img {
+    width: 24px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .search-container-desktop {
+    display: none;
+  }
+  .search-container-mobile {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .category_list {
+    /* gap: 5px; */
+    grid-template-columns: auto auto auto auto;
+  }
+  .latest_ads {
+    grid-template-columns: auto auto;
+    width: 450px;
+  }
+  .latest_ads_card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+  .location {
+    max-width: 90%;
+  }
+  .location ul a {
+    font-size: 14px;
+  }
 }

@@ -11,10 +11,10 @@
     <header class="toolbar">
         <div class="logo">
           <!-- flag Cambodia -->
-          <img src="https://www.khmer24.com/icon/khmer24.png" alt="webname" />
-          <img src="https://www.khmer24.com/icon/km-40x40.png" alt="" />
+          <img class="logo_img" src="https://www.khmer24.com/icon/khmer24.png" alt="webname" />
+          <img class="flag_img" src="https://www.khmer24.com/icon/km-40x40.png" alt="" />
         </div>
-        <div class="search-container">
+        <div class="search-container search-container-desktop">
           <select class="menu" id="search">
             <option value="#">All Category</option>
             <option value="#">Cars and Vehicles</option>
@@ -32,6 +32,16 @@
           <button id="paypalBtn">Sell</button>
         </div>
     </header>
+    <div class="search-container search-container-mobile">
+          <select class="menu" id="search">
+            <option value="#">All Category</option>
+            <option value="#">Cars and Vehicles</option>
+            <option value="#">Phones & Tablets</option>
+            <option value="#">Computers & Accessories</option>
+            <option value="#">Electronics & Appliances</option>
+          </select>
+          <input type="text" placeholder="What are you looking for..." />
+        </div>
     <!-- Logo Picture vivo-->
     <div class="logo_pic">
       <img
@@ -477,20 +487,17 @@
       <img src="https://www.khmer24.com/icon/khmer24_footer.png" alt="" />
     </div>
     <!-- follow khmer24 -->
-     <div class="detail">
+    <div class="detail">
      <div class="follow_khmer24">
-      <td>
         <h4>Follow Khmer24</h4>
         <li>facebook</li>
         <li>Youtube</li>
-      </td>
      </div>
      <div class="follow_khmer24">
         <h4>Customer Service</h4>
         <li>Contact Us</li>
         <li>Privacy Policy</li>
         <li>Account Deletion</li>
-    
      </div>
      <div class="follow_khmer24">
         <h4>Useful Information</h4>
@@ -508,7 +515,6 @@
         <li><img src="https://www.khmer24.com/icon/playstore.png" alt=""></li>
         <li><img src="https://www.khmer24.com/icon/appGallery_.jpg" alt=""></li></div>
         </div>
-        
      </div>
      <div class="we_accept">
         <h4>We accept: </h4>
@@ -519,6 +525,6 @@
         <li><img src="https://www.khmer24.com/v1.8.8/icon/UPI.svg" alt=""></li>
         <li><img src="https://www.khmer24.com/v1.8.8/icon/JCB.svg" alt=""></li>
      </div>
-     </div>
+    </div>
   </body>
 </html>
