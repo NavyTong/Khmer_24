@@ -152,9 +152,16 @@ body {
 .latest_ads_latest {
   margin-left: 10%;
 }
+.latest_ads_p {
+  color: #0052ff;
+  margin-left: 40px;
+  margin-top: 40px;
+  font-size: 15;
+}
 .latest_ads_card button {
-  margin-top: 20%;
+  margin-top: 90px;
   margin-bottom: 10px;
+  margin-left: 50px;
   font-size: 16px;
   color: #0052ff;
   border-radius: 10px;
@@ -270,5 +277,12 @@ body {
   }
   .location ul a {
     font-size: 14px;
+  }
+  .we_accept {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    margin-left: 5px;
+    justify-content: flex-end;
   }
 }
