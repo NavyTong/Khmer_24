@@ -45,30 +45,7 @@ const categories = [
     img: "https://images.khmer24.co/categories/21-12-07/s-foods-1638848268.png",
   },
 ];
-
-let html = "";
-for (let i = 0; i < categories.length; i++) {
-  html += `
-  <div class="category_item">
-        <img
-          src="${categories[i].img}"
-          alt=""
-        />
-        <p>${categories[i].name}</p>
-      </div>
-   
-  <div class="top_ads_card">
-        <img
-          src="${top[i].img}"
-          alt=""
-        />
-        <p>${top[i].name}</p>
-      </div>
-   `;
-}
-
-document.getElementById("category_list").innerHTML = html;
-
+// top ads
 const top = [
   {
     name: "House for Urgent sale",
@@ -100,4 +77,29 @@ const top = [
   },
 ];
 
-document.getElementById("top_ads").innerHTML = html;
+let html = "";
+for (let i = 0; i < categories.length; i++) {
+  html += `
+  <div class="category_item">
+        <img
+          src="${categories[i].img}"
+          alt=""
+        />
+        <p>${categories[i].name}</p>
+      </div>
+   `;
+}
+document.getElementById("category_list").innerHTML = html;
+let html1 = "";
+for (let i = 0; i < top.length; i++) {
+  html += `
+  <div class="top_ads_card">
+        <img
+          src="${top[i].img}"
+          alt=""
+        />
+        <p>${top[i].name}</p>
+      </div>
+   `;
+}
+document.getElementById("top_ads").innerHTML = html1;
