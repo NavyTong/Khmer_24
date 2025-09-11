@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   /* closs scroll x */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background-color: whitesmoke;
 }
 .logo {
