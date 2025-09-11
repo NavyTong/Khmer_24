@@ -45,37 +45,6 @@ const categories = [
     img: "https://images.khmer24.co/categories/21-12-07/s-foods-1638848268.png",
   },
 ];
-// top ads
-const top = [
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-];
 
 let html = "";
 for (let i = 0; i < categories.length; i++) {
@@ -90,16 +59,3 @@ for (let i = 0; i < categories.length; i++) {
    `;
 }
 document.getElementById("category_list").innerHTML = html;
-let html1 = "";
-for (let i = 0; i < top.length; i++) {
-  html += `
-  <div class="top_ads_card">
-        <img
-          src="${top[i].img}"
-          alt=""
-        />
-        <p>${top[i].name}</p>
-      </div>
-   `;
-}
-document.getElementById("top_ads").innerHTML = html1;
