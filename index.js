@@ -21,6 +21,10 @@ const categories = [
     img: "https://images.khmer24.co/categories/23-09-21/s-property-housing-rentals-1695265714.png",
   },
   {
+    name: "job",
+    img: "https://images.khmer24.co/categories/21-12-07/s-jobs-1638848186.png",
+  },
+  {
     name: "Services",
     img: "https://images.khmer24.co/categories/21-12-07/s-services-1638848194.png",
   },
@@ -45,38 +49,6 @@ const categories = [
     img: "https://images.khmer24.co/categories/21-12-07/s-foods-1638848268.png",
   },
 ];
-// top ads
-const top = [
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-  {
-    name: "House for Urgent sale",
-    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
-  },
-];
-
 let html = "";
 for (let i = 0; i < categories.length; i++) {
   html += `
@@ -90,15 +62,73 @@ for (let i = 0; i < categories.length; i++) {
    `;
 }
 document.getElementById("category_list").innerHTML = html;
+
+// top ads
+const topAds = [
+  {
+    name: "House for Urgent sale",
+    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
+    size: "Sale 1052m²",
+    date: "Aug 19 · Peam Ro, Prey Veng",
+    price: "$750,000",
+  },
+  {
+    name: "House for Urgent sale",
+    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
+    size: "Sale 1052m²",
+    date: "Aug 19 · Peam Ro, Prey Veng",
+    price: "$750,000",
+  },
+  {
+    name: "House for Urgent sale",
+    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
+    size: "Sale 1052m²",
+    date: "Aug 19 · Peam Ro, Prey Veng",
+    price: "$750,000",
+  },
+  {
+    name: "House for Urgent sale",
+    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
+    size: "Sale 1052m²",
+    date: "Aug 19 · Peam Ro, Prey Veng",
+    price: "$750,000",
+  },
+  {
+    name: "House for Urgent sale",
+    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
+    size: "Sale 1052m²",
+    date: "Aug 19 · Peam Ro, Prey Veng",
+    price: "$750,000",
+  },
+  {
+    name: "House for Urgent sale",
+    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
+    size: "Sale 1052m²",
+    date: "Aug 19 · Peam Ro, Prey Veng",
+    price: "$750,000",
+  },
+  {
+    name: "House for Urgent sale",
+    img: "https://images.khmer24.co/25-08-19/s--ud83c-udfe6-house-for-urgent-sale-negotiable-aba-loan-available--777302175559394447185632-b.jpg",
+    size: "Sale 1052m²",
+    date: "Aug 19 · Peam Ro, Prey Veng",
+    price: "$750,000",
+  },
+];
+
 let html1 = "";
-for (let i = 0; i < top.length; i++) {
-  html += `
+for (let i = 0; i < topAds.length; i++) {
+  html1 += `
   <div class="top_ads_card">
         <img
-          src="${top[i].img}"
+          src="${topAds[i].img}"
           alt=""
         />
-        <p>${top[i].name}</p>
+        <h4>${topAds[i].name}</h4>
+        <p>${topAds[i].size}</p>
+        <p>${topAds[i].date}</p>
+        <p>${topAds[i].price}</p>
+
       </div>
    `;
 }
