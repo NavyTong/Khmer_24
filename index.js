@@ -300,8 +300,8 @@ for (let i = 0; i < latestAds.length; i++) {
 }
 document.getElementById("latest_ads").innerHTML = htmllatest;
 
-Location;
-const location = [
+// Location;
+const locations = [
   "Phnom Penh",
   "Kandal",
   "Kampot",
@@ -331,55 +331,98 @@ const location = [
 
 let htmlLocation = " ";
 for (let i = 0; i < locations.length; i++) {
-  htmlLocation += (
+  htmlLocation += `
     <li>
-      <a href="#">${location[i]}</a>
+      <a href="#">${locations[i]}</a>
     </li>
-  );
+    `;
 }
-document.getElementById("locationList").innerHTML = htmlLocations;
+document.getElementById("locationList").innerHTML = htmlLocation;
 
-// Follow khmer24
-const footerSelections = [
-  {
-    title: "Follow Khmer24",
-    items: ["Facebook", "YouTube"],
-  },
-  {
-    title: "Customer Service",
-    items: ["Contact Us", "Privacy Policy", "Account Deletion"],
-  },
-  {
-    title: "Useful Information",
-    custom: (
-      <div class="useful">
-        <div class="qr">
-          <li>
-            <img
-              src="https://www.khmer24.com/icon/khmer24-qr-code.png"
-              alt=""
-            />
-          </li>
-        </div>
-        <div class="item">
-          <li>
-            <img src="https://www.khmer24.com/icon/appstore.png" alt="" />
-          </li>
-          <li>
-            <img src="https://www.khmer24.com/icon/playstore.png" alt="" />
-          </li>
-          <li>
-            <img src="https://www.khmer24.com/icon/appGallery_.jpg" alt="" />
-          </li>
-        </div>
-      </div>
-    ),
-  },
-  {
-    title: "We accept:",
-    custom: (
-      <div class="we_accept">
-        <h4>We accept:</h4>
+// // // Follow khmer24
+// const footerSelections = [
+//   {
+//     title: "Follow Khmer24",
+//     items: ["Facebook", "YouTube"],
+//   },
+//   {
+//     title: "Customer Service",
+//     items: ["Contact Us", "Privacy Policy", "Account Deletion"],
+//   },
+//   {
+//     title: "Useful Information",
+//     custom: `
+//       <div class="useful">
+//         <div class="qr">
+//           <li>
+//             <img
+//               src="https://www.khmer24.com/icon/khmer24-qr-code.png"
+//               alt=""
+//             />
+//           </li>
+//         </div>
+//         <div class="item">
+//           <li>
+//             <img src="https://www.khmer24.com/icon/appstore.png" alt="" />
+//           </li>
+//           <li>
+//             <img src="https://www.khmer24.com/icon/playstore.png" alt="" />
+//           </li>
+//           <li>
+//             <img src="https://www.khmer24.com/icon/appGallery_.jpg" alt="" />
+//           </li>
+//         </div>
+//       </div>
+//     `,
+//   },
+//   {
+//     title: "We accept:",
+//     custom: `
+//       <div class="we_accept">
+//         <h4>We accept:</h4>
+//         <li>
+//           <img src="https://www.khmer24.com/v1.8.8/icon/ABA.svg" alt="" />
+//         </li>
+//         <li>
+//           <img src="https://www.khmer24.com/v1.8.8/icon/Khqr.svg" alt="" />
+//         </li>
+//         <li>
+//           <img src="https://www.khmer24.com/v1.8.8/icon/Visa.svg" alt="" />
+//         </li>
+//         <li>
+//           <img
+//             src="https://www.khmer24.com/v1.8.8/icon/Mastercard.svg"
+//             alt=""
+//           />
+//         </li>
+//         <li>
+//           <img src="https://www.khmer24.com/v1.8.8/icon/UPI.svg" alt="" />
+//         </li>
+//         <li>
+//           <img src="https://www.khmer24.com/v1.8.8/icon/JCB.svg" alt="" />
+//         </li>
+//       </div>
+//     `
+//   },
+// ];
+// let footerHTML = " ";
+// footerSelections.forEach((section) => {
+//   footerHTML += `
+//   <div class="follow_khmer24>
+//   <h4>${section.title}</h4>
+//   ${
+//     Selection.items
+//       ? section.items.map((item) => `<li>${item}</li>`).join("")
+//       : section.custom
+//   }
+//   </div>
+//   `;
+// });
+
+// document.getElementById("detail").innerHTML = footerHTML;
+
+document.getElementById("we_accepted").innerHTML = `
+<h4>We accept:</h4>
         <li>
           <img src="https://www.khmer24.com/v1.8.8/icon/ABA.svg" alt="" />
         </li>
@@ -400,23 +443,4 @@ const footerSelections = [
         </li>
         <li>
           <img src="https://www.khmer24.com/v1.8.8/icon/JCB.svg" alt="" />
-        </li>
-      </div>
-    ),
-  },
-];
-let footerHTML = " ";
-footerSelections.forEach((section) => {
-  footerHTML += `
-  <div class="follow_khmer24>
-  <h4>${section.title}</h4>
-  ${
-    Selection.items
-      ? section.items.map((item) => `<li>${item}</li>`).join("")
-      : section.custom
-  }
-  </div>
-  `;
-});
-
-document.getElementById("detail").innerHTML = footerHTML;
+        </li>`;
