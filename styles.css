@@ -177,19 +177,19 @@ body {
   padding: 12px 20px;
   background-color: #4c7ade;
 }
-.location {
+.locationList {
   margin-left: 10%;
   margin-right: 10%;
   border-style: ridge;
   max-width: 100%;
 }
-.location ul {
+.list_location {
   list-style: none;
   /* cut line */
   columns: 5;
   column-gap: 40px;
 }
-.location ul a {
+.locationUl a {
   text-decoration: none;
   color: #05668d;
   font-size: 18px;

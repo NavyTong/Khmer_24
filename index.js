@@ -300,8 +300,8 @@ for (let i = 0; i < latestAds.length; i++) {
 }
 document.getElementById("latest_ads").innerHTML = htmllatest;
 
-Location;
-const location = [
+// Location
+const locations = [
   "Phnom Penh",
   "Kandal",
   "Kampot",
@@ -331,15 +331,15 @@ const location = [
 
 let htmlLocation = " ";
 for (let i = 0; i < locations.length; i++) {
-  htmlLocation += (
+  htmlLocation += `
     <li>
-      <a href="#">${location[i]}</a>
+      <a href="#">${locations[i]}</a>
     </li>
-  );
+  `;
 }
-document.getElementById("locationList").innerHTML = htmlLocations;
+document.getElementById("locationUl").innerHTML = htmlLocation;
 
-// Follow khmer24
+//  Follow khmer24
 const footerSelections = [
   {
     title: "Follow Khmer24",
@@ -351,7 +351,12 @@ const footerSelections = [
   },
   {
     title: "Useful Information",
-    custom: (
+    items: ["Safety Tips", "Ad Posting Rule", "Feedback"],
+  },
+
+  {
+    title: "Useful Information",
+    custom: `
       <div class="useful">
         <div class="qr">
           <li>
@@ -364,45 +369,30 @@ const footerSelections = [
         <div class="item">
           <li>
             <img src="https://www.khmer24.com/icon/appstore.png" alt="" />
-          </li>
-          <li>
+          
             <img src="https://www.khmer24.com/icon/playstore.png" alt="" />
-          </li>
-          <li>
+          
             <img src="https://www.khmer24.com/icon/appGallery_.jpg" alt="" />
           </li>
         </div>
       </div>
-    ),
+    `,
   },
   {
     title: "We accept:",
-    custom: (
-      <div class="we_accept">
-        <h4>We accept:</h4>
-        <li>
+    custom: `
           <img src="https://www.khmer24.com/v1.8.8/icon/ABA.svg" alt="" />
-        </li>
-        <li>
+       
           <img src="https://www.khmer24.com/v1.8.8/icon/Khqr.svg" alt="" />
-        </li>
-        <li>
+      
           <img src="https://www.khmer24.com/v1.8.8/icon/Visa.svg" alt="" />
-        </li>
-        <li>
+       
           <img
-            src="https://www.khmer24.com/v1.8.8/icon/Mastercard.svg"
-            alt=""
-          />
-        </li>
-        <li>
+            src="https://www.khmer24.com/v1.8.8/icon/Mastercard.svg" alt=""/>
           <img src="https://www.khmer24.com/v1.8.8/icon/UPI.svg" alt="" />
-        </li>
-        <li>
+        
           <img src="https://www.khmer24.com/v1.8.8/icon/JCB.svg" alt="" />
-        </li>
-      </div>
-    ),
+    `,
   },
 ];
 let footerHTML = " ";
