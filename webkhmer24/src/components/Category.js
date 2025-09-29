@@ -77,14 +77,27 @@ const categories = [
 
 const Category = () => {
   return (
-    <div>
+    <div className="flex flex-wrap w-10/12 mx-auto">
       {categories.map((cat, index) => (
-        <div key={index}>
-          <img src={cat.imgeUrl} alt={cat.name} />
-          <p>{cat.name}</p>
-        </div>
+        <CategoryItem key={index} category={cat} />
       ))}
     </div>
   );
 };
+
+function CategoryItem(props) {
+  const { category } = props;
+
+  return (
+    <div className="w-2/12 flex justify-center items-center p-4">
+      <div>
+        <div className="flex justify-center items-center">
+          <img className="w-auto h-20 object-cover" src={category.imgeUrl} alt={category.name} />
+        </div>
+        <p className="text-center">{category.name}</p>
+      </div>
+    </div>
+  );
+}
+
 export default Category;
