@@ -355,7 +355,7 @@ const footerSelections = [
   },
 
   {
-    title: "Useful Information",
+    title: "Download khmer24 app FREE",
     custom: `
       <div class="useful">
         <div class="qr">
