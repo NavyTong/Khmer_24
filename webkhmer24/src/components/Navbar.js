@@ -9,9 +9,9 @@ export default function Navbar() {
           alt="webname"
         />
         <img
-          class="w-8 h-8"
+          className="w-8 h-8"
           src="https://www.khmer24.com/icon/km-40x40.png"
-          alt=""
+          alt="cambodia"
         />
       </div>
       <div className="flex-grow">
@@ -25,7 +25,7 @@ export default function Navbar() {
         <input type="text" placeholder="What are you looking for..." />
       </div>
       {/* <!-- button --> */}
-      <div className="#">
+      <div className="">
         <a href="#">Login</a>
         <a id="choose" href="#">
           Or
