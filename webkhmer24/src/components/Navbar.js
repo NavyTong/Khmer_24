@@ -14,24 +14,30 @@ export default function Navbar() {
           alt="cambodia"
         />
       </div>
-      <div className="flex-grow">
-        <select className="menu" id="search">
+      <div className="flex-grow ">
+        <select className="menu border h-7" id="search">
           <option value="#">All Category</option>
           <option value="#">Cars and Vehicles</option>
           <option value="#">Phones & Tablets</option>
           <option value="#">Computers & Accessories</option>
           <option value="#">Electronics & Appliances</option>
         </select>
-        <input type="text" placeholder="What are you looking for..." />
+        <input
+          className="border w-50"
+          type="text"
+          placeholder="What are you looking for..."
+        />
       </div>
       {/* <!-- button --> */}
-      <div className="">
+      <div className="mr-20">
         <a href="#">Login</a>
         <a id="choose" href="#">
           Or
         </a>
         <a href="#">Register</a>
-        <button id="paypalBtn">Sell</button>
+        <button id="paypalBtn" className="border bg-orange-500 h-10 w-15">
+          Sell
+        </button>
       </div>
     </nav>
   );
