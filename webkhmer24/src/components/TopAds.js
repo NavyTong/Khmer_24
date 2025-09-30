@@ -78,32 +78,17 @@ const topAds = [
     date: "Aug 12 · Saensokh, Phnom Peng",
     price: "$45,000",
   },
-  {
-    name: "ផ្នែក លក់ ជាច្រើននាក់",
-    img: "https://images.khmer24.co/25-08-16/s--7-residence-304217175530221061216138-b.jpg",
-    size: "Full-time 1Year+Experience",
-    date: "2d · Krong Preah Sihanouk, Preah Sihanouk",
-    price: "$500+",
-  },
-  {
-    name: "លក់វីឡា Queen A បុរី Chip Mong",
-    img: "https://images.khmer24.co/24-11-26/s--queen-a-chip-mong-598-284854173259282630040535-b.jpg",
-    size: "Sale 4 bedroom 6 Bathroom",
-    date: "Nov 26 . Ruessei kaev, Phnom Penh",
-    price: "$810,000",
-  },
-  {
-    name: "ទូរឈើលក់",
-    img: "https://images.khmer24.co/25-07-03/s---1128631175153306129395691-b.jpg",
-    size: " Sale",
-    date: "2d . Ruessei kaev, Phnom Penh",
-    price: "$500",
-  },
 ];
 
 function TopAdsList() {
   return (
-    <div style={{ padding: "20px" }}>
+    <div
+      style={{
+        backgroundColor: "gray",
+        marginLeft: "120px",
+        marginRight: "100px",
+      }}
+    >
       {/* Heading */}
       <h2
         style={{
@@ -114,7 +99,6 @@ function TopAdsList() {
       >
         Top Ads
       </h2>
-
       {/* Ads grid */}
       <div
         style={{
@@ -129,10 +113,12 @@ function TopAdsList() {
             key={index}
             style={{
               border: "1px solid #ddd",
-              borderRadius: "10px",
-              padding: "10px",
+              borderRadius: "20px",
+              padding: "1px",
               textAlign: "center",
               boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+              width: "300px",
+              height: "400px",
             }}
           >
             <img
