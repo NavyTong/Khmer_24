@@ -102,6 +102,7 @@ function TopAdsList() {
       {/* Ads grid */}
       <div
         style={{
+          padding: "10px",
           display: "flex",
           gridTemplateColumns: "repeat(3, 1fr)",
           gap: "20px",
@@ -110,7 +111,7 @@ function TopAdsList() {
       >
         {topAds.map((ad, index) => (
           <div
-            className="shrink-0"
+            className="shrink-0 bg bg-black"
             key={index}
             style={{
               border: "1px solid #ddd",
