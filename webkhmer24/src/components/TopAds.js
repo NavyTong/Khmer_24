@@ -84,7 +84,7 @@ function TopAdsList() {
   return (
     <div
       style={{
-        backgroundColor: "skyblue",
+        backgroundColor: " skyblue",
         marginLeft: "120px",
         marginRight: "100px",
       }}
