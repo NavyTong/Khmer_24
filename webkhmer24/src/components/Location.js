@@ -35,7 +35,6 @@ export default function LocationList() {
         style={{
           color: "#006DA1",
           padding: "1px",
-          textAlign: "center",
         }}
       >
         {loc}
@@ -43,7 +42,7 @@ export default function LocationList() {
     </div>
   ));
   return (
-    <div>
+    <div className="mr-25 ml-25">
       <h2>Browse by Location</h2>
       <ul
         style={{

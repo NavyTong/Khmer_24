@@ -16,8 +16,8 @@ const footerSelections = [
   {
     title: "Download khmer24 app FREE",
     custom: (
-      <div className="useful">
-        <div className="qr ">
+      <div className="useful space-x-10 ">
+        <div className="qr">
           <li>
             <img src="https://www.khmer24.com/icon/khmer24-qr-code.png" />
           </li>

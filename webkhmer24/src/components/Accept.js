@@ -18,7 +18,7 @@ const accept = [
 ];
 export default function Accept() {
   return (
-    <div className="accept">
+    <div className="accept w-15 float-right mr-90">
       {accept.map((section, index) => (
         <div key={index}>
           <h4>{section.title}</h4>

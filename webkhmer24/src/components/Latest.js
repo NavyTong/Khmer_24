@@ -140,7 +140,7 @@ const latestAds = [
 
 const LatestAds = () => {
   return (
-    <div style={{ padding: "20px", marginLeft: "70px", marginRight: "70px" }}>
+    <div style={{ padding: "20px", marginLeft: "75px", marginRight: "75px" }}>
       <h2
         style={{ marginBottom: "20px", fontSize: "24px", fontWeight: "bold" }}
       >
