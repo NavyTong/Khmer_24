@@ -83,22 +83,25 @@ const topAds = [
 function TopAdsList() {
   return (
     <div
+      className="my-8 rounded-lg"
       style={{
         backgroundColor: " skyblue",
         marginLeft: "120px",
         marginRight: "100px",
       }}
     >
-      {/* Heading */}
-      <h2
-        style={{
-          marginBottom: "20px",
-          fontSize: "24px",
-          fontWeight: "bold",
-        }}
-      >
-        Top Ads
-      </h2>
+      <div className="px-4 pt-4 rounded-lg">
+        {/* Heading */}
+        <h2
+          style={{
+            marginBottom: "20px",
+            fontSize: "24px",
+            fontWeight: "bold",
+          }}
+        >
+          Top Ads
+        </h2>
+      </div>
       {/* Ads grid */}
       <div
         style={{
@@ -111,15 +114,12 @@ function TopAdsList() {
       >
         {topAds.map((ad, index) => (
           <div
-            className="shrink-0 bg bg-black"
+            className="shrink-0 bg-white p-1 rounded-lg"
             key={index}
             style={{
               border: "1px solid #ddd",
-              borderRadius: "20px",
-              padding: "1px",
-              textAlign: "center",
               boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-              width: "200px",
+              width: "250px",
               height: "350px",
             }}
           >
@@ -133,10 +133,12 @@ function TopAdsList() {
                 borderRadius: "8px",
               }}
             />
-            <h3 style={{ fontSize: "16px", margin: "10px 0" }}>{ad.name}</h3>
-            <p>{ad.size}</p>
-            <p>{ad.date}</p>
-            <strong style={{ color: "red" }}>{ad.price}</strong>
+            <div className="p-2">
+              <h3 style={{ fontSize: "16px", margin: "10px 0" }}>{ad.name}</h3>
+              <p>{ad.size}</p>
+              <p>{ad.date}</p>
+              <strong style={{ color: "red" }}>{ad.price}</strong>
+            </div>
           </div>
         ))}
       </div>
