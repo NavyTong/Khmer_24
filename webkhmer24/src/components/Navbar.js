@@ -37,7 +37,7 @@ export default function Navbar() {
           <a id="choose" href="#" ClassName="text-gray-500">
             Or
           </a>
-          <a href="#" className="dark:text-sky-400">
+          <a href="#" className="text-sky-400">
             Register
           </a>
           <button

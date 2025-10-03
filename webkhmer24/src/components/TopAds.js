@@ -84,7 +84,7 @@ function TopAdsList() {
   return (
     <div
       style={{
-        backgroundColor: "gray",
+        backgroundColor: "skyblue",
         marginLeft: "120px",
         marginRight: "100px",
       }}
@@ -110,6 +110,7 @@ function TopAdsList() {
       >
         {topAds.map((ad, index) => (
           <div
+            className="shrink-0"
             key={index}
             style={{
               border: "1px solid #ddd",
@@ -117,8 +118,8 @@ function TopAdsList() {
               padding: "1px",
               textAlign: "center",
               boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-              width: "300px",
-              height: "400px",
+              width: "200px",
+              height: "350px",
             }}
           >
             <img
