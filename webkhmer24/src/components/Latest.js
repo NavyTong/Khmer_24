@@ -150,12 +150,17 @@ const LatestAds = () => {
           gap: "20px",
         }}
       >
-        <div className="border border-gray-300 rounded-lg p-4 bg-purple-400 flex flex-col justify-between">
-          <h4 className="text-center px-4 text-white">
-            Want to see your ads here? Make some extra cash by selling this
-            khmer24. Go on, it is quick and easy.
-          </h4>
-          <button className="mt-4 px-8 py-3 mx-auto d-block bg-blue-500 text-white rounded-2xl cursor-pointer">
+        <div className="border border-gray-300 rounded-lg p-4 bg-linear-to-t from-indigo-500 via-indigo-500 to-sky-500 flex flex-col justify-between">
+          <div>
+            <h4 className="text-center text-lg font-bold text-white">
+              Want to see your ads here?
+            </h4>
+            <h4 className="mt-4 text-center text-white">
+              Make some extra cash by selling this khmer24. Go on, it is quick
+              and easy.
+            </h4>
+          </div>
+          <button className="mt-4 px-8 py-3 mx-auto w-10/12 bg-white text-blue-600 font-semibold rounded cursor-pointer">
             Start Selling
           </button>
         </div>
