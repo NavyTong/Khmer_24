@@ -3,7 +3,7 @@ export default function Picture() {
     <nav>
       <div className="#">
         <img
-          className="w-full"
+          className="m-auto w-50%"
           src="https://www.khmer24.com/icon/khmer24_footer.png"
           alt=""
         />

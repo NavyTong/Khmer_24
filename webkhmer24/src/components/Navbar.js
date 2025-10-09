@@ -31,13 +31,13 @@ export default function Navbar() {
         </div>
         {/* <!-- button --> */}
         <div className="flex items-center space-x-2.5 ">
-          <a href="#" className="text-sky-400">
+          <a href="#" className="text-sky-400 font-bold">
             Login
           </a>
-          <a id="choose" href="#" ClassName="text-gray-500">
+          <a id="choose" href="#" className="text-gray-400">
             Or
           </a>
-          <a href="#" className="text-sky-400">
+          <a href="#" className="text-sky-400 font-bold">
             Register
           </a>
           <button

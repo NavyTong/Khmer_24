@@ -34,7 +34,6 @@ export default function LocationList() {
         key={index}
         style={{
           color: "#006DA1",
-          padding: "1px",
         }}
       >
         {loc}
@@ -42,11 +41,10 @@ export default function LocationList() {
     </div>
   ));
   return (
-    <div className="mr-25 ml-25">
-      <h2>Browse by Location</h2>
+    <div className="mr-25 ml-25 border-0.5 bg-white p-10 rounded-sm">
+      <h3 className="font-bold text-lg">Browse by Location</h3>
       <ul
         style={{
-          border: "1px solid #ddd",
           liststyle: "none",
           display: "grid",
           gridTemplateColumns: "repeat(5, 1fr)",

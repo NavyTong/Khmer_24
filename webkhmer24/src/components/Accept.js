@@ -1,8 +1,6 @@
 import React from "react";
-
-const accept = [
+const imgs = [
   {
-    title: "We accept:",
     custom: (
       <>
         <img src="https://www.khmer24.com/v1.9.1/icon/ABA.svg" alt="" />
@@ -18,11 +16,11 @@ const accept = [
 ];
 export default function Accept() {
   return (
-    <div className="accept w-15 float-right mr-90">
-      {accept.map((section, index) => (
-        <div key={index}>
-          <h4>{section.title}</h4>
-          <div className="flex gap-2 items-center">{section.custom}</div>
+    <div className=" bg-blue-500">
+      {imgs.map((section, index) => (
+        <div key={section.index} className="flex space-x-10">
+          <h4>We accept</h4>
+          <div className="flex float-end gap-2 ">{section.custom}</div>
         </div>
       ))}
     </div>

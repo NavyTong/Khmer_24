@@ -91,7 +91,7 @@ function CategoryItem(props) {
   return (
     <div className="w-2/12 flex justify-center items-center px-4 py-8">
       <div>
-        <div className="mx-auto bg-white w-24 h-24 rounded-full flex justify-center items-center">
+        <div className="mx-auto bg-sky-100 w-24 h-24 rounded-full flex justify-center items-center">
           <img
             className="w-16 h-16 object-cover"
             src={category.imgeUrl}

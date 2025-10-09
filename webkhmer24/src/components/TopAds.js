@@ -83,9 +83,8 @@ const topAds = [
 function TopAdsList() {
   return (
     <div
-      className="my-8 rounded-lg"
+      className="my-8 rounded-lg bg-linear-to-t from-cyan-10 to-sky-300 "
       style={{
-        backgroundColor: " skyblue",
         marginLeft: "120px",
         marginRight: "100px",
       }}
@@ -134,8 +133,8 @@ function TopAdsList() {
               }}
             />
             <div className="p-2">
-              <h3 style={{ fontSize: "16px", margin: "10px 0" }}>{ad.name}</h3>
-              <p>{ad.size}</p>
+              <h3 style={{ fontSize: "20px", margin: "10px 0" }}>{ad.name}</h3>
+              <p className="bg-gray-200">{ad.size}</p>
               <p>{ad.date}</p>
               <strong style={{ color: "red" }}>{ad.price}</strong>
             </div>
