@@ -1,9 +1,5 @@
 const latestAds = [
   {
-    name: "Want to see your ads here? Make some extra cash by selling this khmer24. Go on, it's quick and easy.",
-    select: "Start Selling",
-  },
-  {
     name: "Link House Urgent Sale",
     img: "https://images.khmer24.co/25-08-20/s--ud83c-udfe6-link-house-urgent-sale-negotiable-aba-loan-available-6-5-p-a-up-to-25-years-repayment-term--777302175568086581613464-b.jpg",
     date: "Aug 20 . Por Senchey, Phnom Penh",
@@ -154,6 +150,20 @@ const LatestAds = () => {
           gap: "20px",
         }}
       >
+        <div className="border border-gray-300 rounded-lg p-4 bg-linear-to-t from-indigo-500 via-indigo-500 to-sky-500 flex flex-col justify-between">
+          <div>
+            <h4 className="text-center text-lg font-bold text-white">
+              Want to see your ads here?
+            </h4>
+            <h4 className="mt-4 text-center text-white">
+              Make some extra cash by selling this khmer24. Go on, it is quick
+              and easy.
+            </h4>
+          </div>
+          <button className="mt-4 px-8 py-3 mx-auto w-10/12 bg-white text-blue-600 font-semibold rounded cursor-pointer">
+            Start Selling
+          </button>
+        </div>
         {latestAds.map((ad, index) => (
           <div
             key={index}
