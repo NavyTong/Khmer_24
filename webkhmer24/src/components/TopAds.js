@@ -134,7 +134,7 @@ function TopAdsList() {
             />
             <div className="p-2">
               <h3 style={{ fontSize: "20px", margin: "10px 0" }}>{ad.name}</h3>
-              <p className="bg-gray-200">{ad.size}</p>
+              <p className="bg-gray-200 inline">{ad.size}</p>
               <p>{ad.date}</p>
               <strong style={{ color: "red" }}>{ad.price}</strong>
             </div>

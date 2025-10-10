@@ -77,7 +77,7 @@ const categories = [
 
 const Category = () => {
   return (
-    <div className="flex flex-wrap w-10/12 items-start mx-auto bg-gray-100 border border-gray-200 rounded-lg my-4">
+    <div className="flex flex-wrap w-10/12 items-start mx-auto bg-white border border-gray-200 rounded-lg my-4">
       {categories.map((cat, index) => (
         <CategoryItem key={index} category={cat} />
       ))}
