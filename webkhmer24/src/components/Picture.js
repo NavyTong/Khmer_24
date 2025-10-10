@@ -1,9 +1,9 @@
 export default function Picture() {
   return (
     <nav>
-      <div className="#">
+      <div>
         <img
-          className="m-auto w-50%"
+          className=" m-auto w-50% "
           src="https://www.khmer24.com/icon/khmer24_footer.png"
           alt=""
         />

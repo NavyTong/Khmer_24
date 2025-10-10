@@ -16,11 +16,11 @@ const imgs = [
 ];
 export default function Accept() {
   return (
-    <div className=" bg-blue-500">
+    <div className="bg-blue-500">
       {imgs.map((section, index) => (
-        <div key={section.index} className="flex space-x-10">
-          <h4>We accept</h4>
-          <div className="flex float-end gap-2 ">{section.custom}</div>
+        <div key={section.index} className="flex ">
+          <h4>We accept:</h4>
+          <div className="flex gap-2 w-10 mb-10">{section.custom}</div>
         </div>
       ))}
     </div>
