@@ -12,7 +12,7 @@ import Accept from "@/components/Accept";
 
 export default function Home() {
   return (
-    <div className="bg-gray-200">
+    <div className="bg-gray-100">
       <Navbar />
       <Logo />
       <Text />
