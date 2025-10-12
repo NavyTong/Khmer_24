@@ -1,9 +1,5 @@
 const latestAds = [
   {
-    name: "Want to see your ads here? Make some extra cash by selling this khmer24. Go on, it's quick and easy.",
-    select: "Start Selling",
-  },
-  {
     name: "Link House Urgent Sale",
     img: "https://images.khmer24.co/25-08-20/s--ud83c-udfe6-link-house-urgent-sale-negotiable-aba-loan-available-6-5-p-a-up-to-25-years-repayment-term--777302175568086581613464-b.jpg",
     date: "Aug 20 . Por Senchey, Phnom Penh",
@@ -146,7 +142,6 @@ const LatestAds = () => {
       >
         Latest Ads
       </h2>
-
       <div
         style={{
           display: "grid",
@@ -154,6 +149,32 @@ const LatestAds = () => {
           gap: "20px",
         }}
       >
+        <div
+          style={{
+            border: "1px solid #ddd",
+            borderRadius: "10px",
+            padding: "10px",
+            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+          }}
+        >
+          <h2>
+            "Want to see your ads here? Make some extra cash by selling this
+            khmer24. Go on, it's quick and easy.",
+          </h2>
+          <button
+            style={{
+              marginTop: "10px",
+              padding: "8px 12px",
+              backgroundColor: "#007bff",
+              color: "#f4efefff",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer",
+            }}
+          >
+            Start Selling
+          </button>
+        </div>
         {latestAds.map((ad, index) => (
           <div
             key={index}
@@ -181,29 +202,14 @@ const LatestAds = () => {
 
             <h4 style={{ margin: "10px 0" }}>{ad.name}</h4>
 
-            {ad.sale && <p>{ad.sale}</p>}
-            {ad.date && <p>{ad.date}</p>}
+            {ad.sale && <p className="bg-gray-200 inline">{ad.sale}</p>}
+            {ad.date && <p className="text-sm">{ad.date}</p>}
 
             {ad.price && (
               <div style={{ fontWeight: "bold", color: "red" }}>{ad.price}</div>
             )}
 
             {/* Special case: first ad (Start Selling button) */}
-            {ad.select && (
-              <button
-                style={{
-                  marginTop: "10px",
-                  padding: "8px 12px",
-                  backgroundColor: "#007bff",
-                  color: "#f4efefff",
-                  border: "none",
-                  borderRadius: "5px",
-                  cursor: "pointer",
-                }}
-              >
-                {ad.select}
-              </button>
-            )}
           </div>
         ))}
       </div>

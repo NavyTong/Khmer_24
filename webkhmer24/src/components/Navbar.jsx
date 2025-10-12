@@ -46,7 +46,7 @@ export default function Navbar() {
           </a>
           <button className="border bg-orange-400 w-20 h-10 text-2xl rounded-md flex space-x-2">
             <CameraIcon className="w-6 text-white m-1" />
-            <span className="text-white font-sans font-bold">Sell</span>
+            <span className="text-white font-sans font-bold">SeII</span>
           </button>
         </div>
       </nav>
