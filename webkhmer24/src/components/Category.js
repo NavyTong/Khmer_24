@@ -77,7 +77,7 @@ const categories = [
 
 const Category = () => {
   return (
-    <div className="flex flex-wrap w-10/12 items-start mx-auto bg-white border border-gray-200 rounded-lg my-4">
+    <div className="flex flex-wrap w-9/12 items-start mx-auto bg-white border border-gray-200 rounded-lg my-4">
       {categories.map((cat, index) => (
         <CategoryItem key={index} category={cat} />
       ))}
@@ -89,9 +89,9 @@ function CategoryItem(props) {
   const { category } = props;
 
   return (
-    <div className="w-2/12 flex justify-center items-center px-4 py-8">
+    <div className="w-2/12 flex justify-center items-center p-8">
       <div>
-        <div className="mx-auto bg-sky-100 w-24 h-24 rounded-full flex justify-center items-center">
+        <div className="mx-auto bg-sky-100 w-15 h-15 rounded-full flex justify-center items-center">
           <img
             className="w-16 h-16 object-cover"
             src={category.imgeUrl}
