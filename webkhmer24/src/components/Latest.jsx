@@ -151,32 +151,17 @@ const LatestAds = () => {
           gap: "20px",
         }}
       >
-        <div
-          style={{
-            border: "1px solid #ddd",
-            borderRadius: "10px",
-            padding: "20px",
-            boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-            background: "blue",
-          }}
-        >
-          <h2 className="text-xl text-white">Want to see your ads here?</h2>
-          <h6 className="text-white">
-            Make some extra cash by selling this khmer24. Go on, it's quick and
-            easy.
-          </h6>
-          <button
-            style={{
-              marginTop: "90px",
-              marginLeft: "50px",
-              padding: "10px 20px",
-              backgroundColor: "white",
-              color: "blue",
-              border: "none",
-              borderRadius: "5px",
-              cursor: "pointer",
-            }}
-          >
+        <div className="border border-gray-300 rounded-lg p-4 bg-linear-to-t from-indigo-500 via-indigo-500 to-sky-500 flex flex-col justify-between">
+          <div>
+            <h4 className="text-center text-lg font-bold text-white">
+              Want to see your ads here?
+            </h4>
+            <h4 className="mt-4 text-center text-white">
+              Make some extra cash by selling this khmer24. Go on, it is quick
+              and easy.
+            </h4>
+          </div>
+          <button className="mt-4 px-8 py-3 mx-auto w-10/12 bg-white text-blue-600 font-semibold rounded cursor-pointer">
             Start Selling
           </button>
         </div>
