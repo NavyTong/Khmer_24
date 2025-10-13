@@ -100,7 +100,7 @@ function TopAdsList() {
       >
         {topAds.map((ad, index) => (
           <div
-            className="shrink-0 bg-white p-1 rounded-lg"
+            className="shrink-0 bg-white p-1 rounded-lg "
             key={index}
             style={{
               border: "1px solid #ddd",
@@ -109,18 +109,20 @@ function TopAdsList() {
               height: "350px",
             }}
           >
-            <EllipsisVerticalIcon className="size-6 text-black-500 border rounded-full ml-53 " />
-            <img
-              src={ad.img}
-              alt={ad.name}
-              style={{
-                width: "100%",
-                height: "150px",
-                objectFit: "cover",
-                borderRadius: "8px",
-              }}
-            />
-            <PhotoIcon className="size-6 text-black-500 border float-end " />
+            <div className="relative">
+              <EllipsisVerticalIcon className="size-6 text-black-500 border rounded-full top-0 right-0 absolute" />
+              <img
+                src={ad.img}
+                alt={ad.name}
+                style={{
+                  width: "100%",
+                  height: "150px",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                }}
+              />
+              <PhotoIcon className="size-6 text-black-500 border float-end bottom-0 right-0 absolute" />
+            </div>
             <div className="p-2">
               <h3 style={{ fontSize: "20px", margin: "10px 0" }}>{ad.name}</h3>
               <p className="bg-gray-200 inline">{ad.size}</p>

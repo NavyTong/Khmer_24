@@ -1,3 +1,5 @@
+import { EllipsisVerticalIcon, PhotoIcon } from "@heroicons/react/24/solid";
+import { HeartIcon } from "@heroicons/react/24/outline";
 const latestAds = [
   {
     name: "Link House Urgent Sale",
@@ -136,7 +138,7 @@ const latestAds = [
 
 const LatestAds = () => {
   return (
-    <div style={{ padding: "20px", marginLeft: "75px", marginRight: "75px" }}>
+    <div className="p-10 ml-35 mr-35">
       <h2
         style={{ marginBottom: "20px", fontSize: "24px", fontWeight: "bold" }}
       >
@@ -153,20 +155,23 @@ const LatestAds = () => {
           style={{
             border: "1px solid #ddd",
             borderRadius: "10px",
-            padding: "10px",
+            padding: "20px",
             boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+            background: "blue",
           }}
         >
-          <h2>
-            "Want to see your ads here? Make some extra cash by selling this
-            khmer24. Go on, it's quick and easy.",
-          </h2>
+          <h2 className="text-xl text-white">Want to see your ads here?</h2>
+          <h6 className="text-white">
+            Make some extra cash by selling this khmer24. Go on, it's quick and
+            easy.
+          </h6>
           <button
             style={{
-              marginTop: "10px",
-              padding: "8px 12px",
-              backgroundColor: "#007bff",
-              color: "#f4efefff",
+              marginTop: "90px",
+              marginLeft: "50px",
+              padding: "10px 20px",
+              backgroundColor: "white",
+              color: "blue",
               border: "none",
               borderRadius: "5px",
               cursor: "pointer",
@@ -186,6 +191,7 @@ const LatestAds = () => {
               boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
             }}
           >
+            <EllipsisVerticalIcon className="size-6 text-black-500 border rounded-full ml-53 " />
             {/* If ad has image, show it */}
             {ad.img && (
               <img
@@ -206,10 +212,11 @@ const LatestAds = () => {
             {ad.date && <p className="text-sm">{ad.date}</p>}
 
             {ad.price && (
-              <div style={{ fontWeight: "bold", color: "red" }}>{ad.price}</div>
+              <strong className="text-xl text-red-500">{ad.price}</strong>
             )}
 
             {/* Special case: first ad (Start Selling button) */}
+            <HeartIcon className=" float-end size-7 " />
           </div>
         ))}
       </div>
