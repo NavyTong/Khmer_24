@@ -1,4 +1,6 @@
 import React from "react";
+import { EllipsisVerticalIcon, PhotoIcon } from "@heroicons/react/24/solid";
+import { HeartIcon } from "@heroicons/react/24/outline";
 
 const topAds = [
   {
@@ -82,33 +84,18 @@ const topAds = [
 
 function TopAdsList() {
   return (
-    <div
-      className="my-8 rounded-lg bg-linear-to-t from-cyan-10 to-sky-300 "
-      style={{
-        marginLeft: "120px",
-        marginRight: "100px",
-      }}
-    >
+    <div className="my-8 rounded-lg bg-linear-to-t from-cyan-10 to-sky-300 ml-45 mr-45 ">
       <div className="px-4 pt-4 rounded-lg">
         {/* Heading */}
-        <h2
-          style={{
-            marginBottom: "20px",
-            fontSize: "24px",
-            fontWeight: "bold",
-          }}
-        >
-          Top Ads
-        </h2>
+        <h2 className="text-2xl font-bold">Top Ads</h2>
       </div>
       {/* Ads grid */}
       <div
+        className="p-5 flex"
         style={{
-          padding: "10px",
-          display: "flex",
           gridTemplateColumns: "repeat(3, 1fr)",
-          gap: "20px",
           overflowX: "scroll",
+          gap: "10px",
         }}
       >
         {topAds.map((ad, index) => (
@@ -122,6 +109,7 @@ function TopAdsList() {
               height: "350px",
             }}
           >
+            <EllipsisVerticalIcon className="size-6 text-black-500 border rounded-full ml-53 " />
             <img
               src={ad.img}
               alt={ad.name}
@@ -132,11 +120,13 @@ function TopAdsList() {
                 borderRadius: "8px",
               }}
             />
+            <PhotoIcon className="size-6 text-black-500 border float-end " />
             <div className="p-2">
               <h3 style={{ fontSize: "20px", margin: "10px 0" }}>{ad.name}</h3>
               <p className="bg-gray-200 inline">{ad.size}</p>
-              <p>{ad.date}</p>
-              <strong style={{ color: "red" }}>{ad.price}</strong>
+              <p className="text-sm">{ad.date}</p>
+              <strong className="text-red-500 text-xl">{ad.price}</strong>
+              <HeartIcon className=" float-end size-7 " />
             </div>
           </div>
         ))}

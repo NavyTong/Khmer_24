@@ -142,7 +142,6 @@ const LatestAds = () => {
       >
         Latest Ads
       </h2>
-
       <div
         style={{
           display: "grid",
@@ -191,29 +190,14 @@ const LatestAds = () => {
 
             <h4 style={{ margin: "10px 0" }}>{ad.name}</h4>
 
-            {ad.sale && <p>{ad.sale}</p>}
-            {ad.date && <p>{ad.date}</p>}
+            {ad.sale && <p className="bg-gray-200 inline">{ad.sale}</p>}
+            {ad.date && <p className="text-sm">{ad.date}</p>}
 
             {ad.price && (
               <div style={{ fontWeight: "bold", color: "red" }}>{ad.price}</div>
             )}
 
             {/* Special case: first ad (Start Selling button) */}
-            {ad.select && (
-              <button
-                style={{
-                  marginTop: "10px",
-                  padding: "8px 12px",
-                  backgroundColor: "#007bff",
-                  color: "#f4efefff",
-                  border: "none",
-                  borderRadius: "5px",
-                  cursor: "pointer",
-                }}
-              >
-                {ad.select}
-              </button>
-            )}
           </div>
         ))}
       </div>
