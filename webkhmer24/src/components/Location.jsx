@@ -29,31 +29,14 @@ const locations = [
 
 export default function LocationList() {
   const listItems = locations.map((loc, index) => (
-    <div>
-      <li
-        key={index}
-        style={{
-          color: "#006DA1",
-        }}
-      >
-        {loc}
-      </li>
+    <div className="text-sky-800">
+      <li key={index}>{loc}</li>
     </div>
   ));
   return (
-    <div className="mr-25 ml-25 border-0.5 bg-white p-10 rounded-sm">
+    <div className="mr-43 ml-43 border-0.5 bg-white p-10 rounded-sm">
       <h3 className="font-bold text-lg">Browse by Location</h3>
-      <ul
-        style={{
-          liststyle: "none",
-          display: "grid",
-          gridTemplateColumns: "repeat(5, 1fr)",
-          gap: "5px",
-          padding: 0,
-        }}
-      >
-        {listItems}
-      </ul>
+      <ul className="list-none grid gap-2 grid-cols-5">{listItems}</ul>
     </div>
   );
 }

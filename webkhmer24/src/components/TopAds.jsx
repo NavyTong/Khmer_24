@@ -90,36 +90,18 @@ function TopAdsList() {
         <h2 className="text-2xl font-bold">Top Ads</h2>
       </div>
       {/* Ads grid */}
-      <div
-        className="p-5 flex"
-        style={{
-          gridTemplateColumns: "repeat(3, 1fr)",
-          overflowX: "scroll",
-          gap: "10px",
-        }}
-      >
+      <div className="p-5 flex gap-2 overflow-x-scroll grid-cols-3">
         {topAds.map((ad, index) => (
           <div
-            className="shrink-0 bg-white p-1 rounded-lg "
+            className="shrink-0 bg-white rounded-lg border-solid w-60 h-80"
             key={index}
-            style={{
-              border: "1px solid #ddd",
-              boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-              width: "250px",
-              height: "350px",
-            }}
           >
             <div className="relative">
               <EllipsisVerticalIcon className="size-6 text-black-500 border rounded-full top-0 right-0 absolute" />
               <img
+                className="w-full h-40 rounded-md"
                 src={ad.img}
                 alt={ad.name}
-                style={{
-                  width: "100%",
-                  height: "150px",
-                  objectFit: "cover",
-                  borderRadius: "8px",
-                }}
               />
               <PhotoIcon className="size-6 text-black-500 border float-end bottom-0 right-0 absolute" />
             </div>

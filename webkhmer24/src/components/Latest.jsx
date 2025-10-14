@@ -144,13 +144,7 @@ const LatestAds = () => {
       >
         Latest Ads
       </h2>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(4, 1fr)",
-          gap: "20px",
-        }}
-      >
+      <div className="grid grid-cols-4 gap-4">
         <div className="border border-gray-300 rounded-lg p-4 bg-linear-to-t from-indigo-500 via-indigo-500 to-sky-500 flex flex-col justify-between">
           <div>
             <h4 className="text-center text-lg font-bold text-white">
@@ -168,40 +162,28 @@ const LatestAds = () => {
         {latestAds.map((ad, index) => (
           <div
             key={index}
-            className="latest_ads_card"
-            style={{
-              border: "1px solid #ddd",
-              borderRadius: "10px",
-              padding: "10px",
-              boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-            }}
+            className="latest_ads_card relative border-solid rounded-md shadow-xl/30"
           >
-            <EllipsisVerticalIcon className="size-6 text-black-500 border rounded-full ml-53 " />
+            <EllipsisVerticalIcon className="size-6 text-black-500 border rounded-full ml-53 absolute top-0 right-0" />
             {/* If ad has image, show it */}
             {ad.img && (
               <img
+                className="w-full h-50 rounded-md"
                 src={ad.img}
                 alt={ad.name}
-                style={{
-                  width: "100%",
-                  height: "150px",
-                  objectFit: "cover",
-                  borderRadius: "8px",
-                }}
               />
             )}
 
-            <h4 style={{ margin: "10px 0" }}>{ad.name}</h4>
-
-            {ad.sale && <p className="bg-gray-200 inline">{ad.sale}</p>}
-            {ad.date && <p className="text-sm">{ad.date}</p>}
+            <h4 className="m-2">{ad.name}</h4>
+            {ad.sale && <p className="bg-gray-200 inline m-2 ">{ad.sale}</p>}
+            {ad.date && <p className="text-sm m-2">{ad.date}</p>}
 
             {ad.price && (
-              <strong className="text-xl text-red-500">{ad.price}</strong>
+              <strong className="text-xl text-red-500 m-2">{ad.price}</strong>
             )}
 
             {/* Special case: first ad (Start Selling button) */}
-            <HeartIcon className=" float-end size-7 " />
+            <HeartIcon className="float-end size-7 " />
           </div>
         ))}
       </div>
