@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Logocar from "@/cards/Logocar";
 import Carddetail from "@/cards/Carddetail";
 import Follow from "@/components/Follow";
+import Accept from "@/components/Accept";
 
 export default function About() {
   return (
@@ -10,6 +11,7 @@ export default function About() {
       <Logocar />
       <Carddetail />
       <Follow />
+      <Accept />
     </div>
   );
 }

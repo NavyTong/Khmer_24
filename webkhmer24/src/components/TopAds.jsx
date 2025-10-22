@@ -81,8 +81,10 @@ const topAds = [
     price: "$45,000",
   },
 ];
-
 function TopAdsList() {
+  const navigateToNewPage = () => {
+    window.location.href = "/ads"; // Replace with your desired path
+  };
   return (
     <div className="my-8 rounded-lg bg-linear-to-t from-cyan-10 to-sky-300 ml-45 mr-45 ">
       <div className="px-4 pt-4 rounded-lg">
@@ -96,8 +98,9 @@ function TopAdsList() {
             className="shrink-0 bg-white rounded-lg border-solid w-60 h-80"
             key={index}
           >
-            <div className="relative">
+            <div className="relative" onClick={navigateToNewPage}>
               <EllipsisVerticalIcon className="size-6 text-black-500 border rounded-full top-0 right-0 absolute" />
+
               <img
                 className="w-full h-40 rounded-md"
                 src={ad.img}
