@@ -1,5 +1,8 @@
-import { EllipsisVerticalIcon, PhotoIcon } from "@heroicons/react/24/solid";
+import { EllipsisVerticalIcon } from "@heroicons/react/24/solid";
 import { HeartIcon } from "@heroicons/react/24/outline";
+
+import { useRouter } from 'next/router';
+
 const latestAds = [
   {
     name: "Link House Urgent Sale",
@@ -137,6 +140,12 @@ const latestAds = [
 ];
 
 const LatestAds = () => {
+  const router = useRouter();
+
+  const onClickAd = (ad) => {
+    router.push('/about');
+  }
+
   return (
     <div className="p-10 ml-35 mr-35">
       <h2
@@ -163,6 +172,7 @@ const LatestAds = () => {
           <div
             key={index}
             className="latest_ads_card relative border-solid rounded-md shadow-xl/30"
+            onClick={onClickAd}
           >
             <EllipsisVerticalIcon className="size-6 text-black-500 border rounded-full ml-53 absolute top-0 right-0" />
             {/* If ad has image, show it */}
