@@ -86,12 +86,18 @@ const Category = () => {
 };
 
 function CategoryItem(props) {
+  const navigaterToNewPage = () => {
+    window.location.href = "/car"; //Replace with your design
+  };
   const { category } = props;
 
   return (
     <div className="w-2/12 flex justify-center items-center p-8">
       <div>
-        <div className="mx-auto bg-sky-100 w-15 h-15 rounded-full flex justify-center items-center">
+        <div
+          className="mx-auto bg-sky-100 w-15 h-15 rounded-full flex justify-center items-center"
+          onClick={navigaterToNewPage}
+        >
           <img
             className="w-16 h-16 object-cover"
             src={category.imgeUrl}
