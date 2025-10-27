@@ -179,7 +179,11 @@ export default function Carddetail() {
               <p>Member Since 11, Aug 2025</p>
             </div>
           </div>
-          <p>link</p>
+          <div className="w-20 h20">
+            <a href="https://www.khmer24.com/chhaylimsoeng77027450">
+              https://www.khmer24.com/chhaylimsoeng77027450
+            </a>
+          </div>
           <div className="p-2 flex space-x-10 border-1">
             <MapPinIcon className="size-20" />
             <p>
